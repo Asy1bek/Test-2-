@@ -29,13 +29,10 @@ public class ProfileServlet extends HttpServlet {
         }
     }
     private String getUsernameById(Long userId) {
-        // Необходимо реализовать метод для получения имени пользователя по его идентификатору из источника данных
-        // Это может быть база данных или другой механизм хранения данных
-        // Для демонстрационных целей используется простой оператор if-else
         if (userId == 1) {
             return "John Doe";
         } else {
-            return null; // Пользователь не найден
+            return null; 
         }
     }
 }

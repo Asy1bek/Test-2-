@@ -26,7 +26,6 @@ public class LoginServlet extends HttpServlet {
         if (userId == null) {
             resp.sendRedirect("/signIn?invalidCredentials");
         } else {
-            // Переход на страницу профиля после успешного входа
             resp.sendRedirect("/profile?id=" + userId);
         }
     }
